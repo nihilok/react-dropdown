@@ -150,7 +150,7 @@ npm i --save github:harveyd/react-component-library#branch-name
 
 ## Usage
 
-Let's say you created a public NPM package called `harvey-component-library` with the `TestComponent` component created in this repository.
+Let's say you created a public NPM package called `harvey-component-library` with the `Dropdown` component created in this repository.
 
 ### Stylesheet
 
@@ -168,12 +168,12 @@ Usage of components (after the library installed as a dependency into another pr
 
 ```TSX
 import React from "react";
-import { TestComponent } from "harvey-component-library";
+import { Dropdown } from "harvey-component-library";
 
 const App = () => (
   <div className="app-container">
     <h1>Hello I'm consuming the component library</h1>
-    <TestComponent heading={'Some heading'} content={<div>Some content</div>} />
+    <Dropdown heading={'Some heading'} content={<div>Some content</div>} />
   </div>
 );
 
@@ -201,9 +201,9 @@ See: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_propertie
 
 ### Dark Mode
 
-The example component `TestComponent` respects the user's dark mode operating system preferences and renders the component in the appropriate theme.
+The example component `Dropdown` respects the user's dark mode operating system preferences and renders the component in the appropriate theme.
 
-This is achieved by using the media query: `@media (prefers-color-scheme: dark)` in combination with CSS variables. The colours that change depending on dark mode preference can be found in [`src/index.css`](src/index.css). Example usage of these variables can be found within [`src/TestComponent/TestComponent.css`](src/TestComponent/TestComponent.css).
+This is achieved by using the media query: `@media (prefers-color-scheme: dark)` in combination with CSS variables. The colours that change depending on dark mode preference can be found in [`src/index.css`](src/index.css). Example usage of these variables can be found within [`src/Dropdown/Dropdown.css`](src/Dropdown/Dropdown.module.css).
 
 Read https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme for more details.
 
@@ -236,7 +236,7 @@ Code splitting of your components is not supported by default.
 [Read this section of my blog post](https://blog.harveydelaney.com/creating-your-own-react-component-library/#introducing-code-splitting-optional-) to find out how and why you would enable code splitting of your components. In summary, code splitting enables users to import components in isolation like:
 
 ```
-import TestComponent from 'harvey-component-library/build/TestComponent';
+import Dropdown from 'harvey-component-library/build/Dropdown';
 ```
 
 This can reduce the bundle size for projects using older (CJS) module formats.

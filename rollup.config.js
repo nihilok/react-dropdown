@@ -5,6 +5,7 @@ import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
 import copy from "rollup-plugin-copy";
 
+
 const packageJson = require("./package.json");
 
 export default {
@@ -32,9 +33,9 @@ export default {
     copy({
       targets: [
         {
-          src: "src/index.css",
+          src: "src/Dropdown/Dropdown.module.css",
           dest: "build",
-          rename: "index.css"
+          rename: "Dropdown/Dropdown.module.css"
         }
       ]
     })

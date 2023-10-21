@@ -1,3 +1,3 @@
-import TestComponent from "./TestComponent";
+import Dropdown from "./Dropdown";
 
-export { TestComponent };
+export {Dropdown}
